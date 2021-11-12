@@ -12,39 +12,41 @@
 </style>
 </head>
 <body>
-    <form action="" method="post" class="loginbox">
+    <form action="abc.php" method="post" class="loginbox">
         
-        <header class="loginbox-title">
+        <header class="cont-logintitle">
             <h1 class="blind">로그인 또는 회원가입 팝업</h1>
             로그인 또는 회원가입
         </header>
 
         <main>
-            <section>
+            <section class="cont-inputlogin">
                 <h2 class="blind">아이디 비밀번호 입력 섹션</h2>   
-                <p>위니브에서 여러분의 궁금증을 해결하세요! :)</p>
-                <input type="text" placeholder="아이디">
-                <input type="password" placeholder="비밀번호">
-                <input type="checkbox">로그인 상태 유지
-                <button type="submit">로그인</button>
-                <ul>
-                    <li>회원가입</li>
-                    <li>아이디/비밀번호 찾기</li>
+                <p class="txt-wenivdesc">위니브에서 여러분의 궁금증을 해결하세요! :)</p>
+                <input type="text" placeholder="아이디" class="input-id" required>
+                <input type="password" placeholder="비밀번호" class="input-pw" required>
+                <input type="checkbox" name="login-maintain" id="login-maintain" class="check-maintain">
+                <label for="login-maintain" class="txt-maintain"><span></span>로그인 상태 유지</label> 
+
+                <button type="submit" class="btn-login">로그인</button>
+                <ul class="link-sign_link-findidpw">
+                    <li class="list-signin"><a href="#" class="link-signin">회원가입</a></li>
+                    <li><a href="#" class="link-findidpw">아이디/비밀번호 찾기</a></li>
                 </ul>
+                <p class="line-contour">또는</p> 
             </section>
 
-            <section>
+            <section class="cont-anotherlogin">
                 <h2 class="blind">타 계정 로그인 버튼</h2>
-                <button>구글 계정으로 로그인</button>
-                <button>페이스북 계정으로 로그인</button>
-                <button>네이버 계정으로 로그인</button>
-                <button>카카오톡 계정으로 로그인</button>
+                <button type="button" class="btn-accountlogin google">구글 계정으로 로그인</button>
+                <button type="button" class="btn-accountlogin facebook">페이스북 계정으로 로그인</button>
+                <button type="button" class="btn-accountlogin naver">네이버 계정으로 로그인</button>
+                <button type="button" class="btn-accountlogin kakao">카카오톡 계정으로 로그인</button>
             </section>
+            <button type="button" class="btn-close">상단닫기버튼</button>
 
 
         </main>
-
-
     </form>
 </body>
 </html>
