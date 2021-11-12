@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+    <style>
+      .scene{
+        width: 200px;
+        height: 260px;
+        perspective: 600px;
+      }
+
+      .card{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transition: all 1s;
+        transform-style: preserve-3d;
+        transform: scale(0.1) rotateY(720deg);
+      }
+
+      .card_face{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        backface-visibility: hidden;
+      }
+
+      .card:hover{
+        
+            background-color: aqua;
+            transform: scale(1) rotateY(0deg);
+      }
+
+      .card_face_front{
+        background:red;
+      }
+      .card_face_back{
+        background: blue;
+        transform: rotateY(180deg);
+      }
+      
+
+    </style>
+</head>
+<body>
+   <div class="scene">
+     <div class="card">
+        <div class="card_face card_face_front"></div>
+        <div class="card_face card_face_back"></div>
+     </div>
+   </div>
+</body>
+</html>

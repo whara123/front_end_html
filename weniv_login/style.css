@@ -1,0 +1,30 @@
+/* @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+body{
+  font-family: Spoqa Han Sans Neo;
+}
+
+button{
+  font-family: Spoqa Han Sans Neo;
+} */
+
+@font-face {
+  font-family: Spoqa Han Sans Neo;
+  src: url(./font/SpoqaHanSansNeo-Medium.ttf);
+}
+
+.loginbox{
+  width: 520px;
+  height: 712px;
+  background-color: white;
+  border:1px solid #c4c4c4;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.loginbox-title{
+  border-bottom:1px solid black;
+  text-align: center;
+  padding: 20px 188px 18px;
+  line-height: 20px;
+}

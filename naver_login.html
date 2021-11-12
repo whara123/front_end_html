@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>naver_login</title>
+  <link rel="stylesheet" href="reset.css">
+    <style>
+ 
+      .logoninfo{
+        font-size:12px;
+        margin-bottom: 10px;
+        padding-left: 3px;
+      }
+      section{
+        width: 350px;
+        height: 135px;
+        background-color: #f7f9fa;
+        border:1px solid #dae1e6;
+        box-sizing: border-box;
+        padding:16px 16px 12px 17px;
+      }
+      .loginbtn{
+        width:315px;
+        height: 48px;
+        background-color:#19ce60;
+        border:1px solid #15c654;
+        font-size: 13px;
+        text-align: center;
+        color: white;
+        font-weight: bold;
+        
+      }
+      .navertitle{
+        margin-top: 19px;
+        width:60px;
+        height: 12px;
+        
+      }
+      .lockimg{
+        width: 10px;
+        height: 14px;
+        margin-right: 5px;
+        vertical-align: top;
+        margin-top: -2px;      
+      }
+
+      .user
+      {
+        
+        width: 11px;
+        height: 11px;
+
+      }
+      .dot{
+        margin-top: 5px;
+        width: 3px;
+        height: 3px;
+        margin-left: 5px;
+        margin-right: 5px;
+        border-radius: 3px;
+        background-color: gray;
+      }
+
+      .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 40px;
+        font-size: 13px;
+        color: gray;
+      }
+
+      .find{
+        display: flex;
+      }
+
+    </style>
+</head>
+
+<body>
+    <main>
+      <section>
+        <article class="logoninfo">
+
+          <p>네이버를 더 안전하고 편리하게 이용하세요</p>
+        
+        </article>
+
+        <article class="loginbtn">
+
+          <img class="navertitle" src="./title.png" alt="naver로고"> 로그인
+        
+        </article>
+
+        <article class="container">
+          
+          <ul class="find">
+            <li><img class="lockimg" src="./lock.png" alt="자물쇠아이콘">아이디</li>
+            <li class="dot"></li>
+            <li class="password">비밀번호찾기</li>
+          </ul>
+            
+          <p class="signIn"><img class="user" src="./user.png" alt="회원가입아이콘"> 회원가입</p>
+
+        </article>
+      </section>
+    </main>
+</body>
+</html>

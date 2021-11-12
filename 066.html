@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <style>
+      ul{
+        /* list-style: none;
+        overflow: hidden; */
+        /* or */
+        /* display: inline-block; */
+      }
+      ul::after{
+        /* after가 인라인이라 블록으로 바꿔줘야함??????? */
+        display: block;
+        content: '';
+        clear:both;
+      }
+      li{
+        float: left;
+        width: 300px;
+        height: 100px;
+        background: pink;
+      }
+      
+    </style>
+  </head>
+<body>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+</body>
+</html>
