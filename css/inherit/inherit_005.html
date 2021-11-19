@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inherit</title>
+    <style>
+        /* 자기 자식, 자손 등에 모두 빨간색을 상속합니다. */
+        body {
+            color: red;
+        }
+        h1 {
+            /* 상속되는 것으로부터 스스로를 지켜냅니다. */
+            color: initial;
+        }
+    </style>
+</head>
+<body>
+    hello world
+    <h1>hello world</h1>
+    <p>hello world</p>
+    <section>
+        <h2>hello world</h2>
+        <article>
+            <p>hello world</p>
+        </article>
+    </section>
+</body>
+</html>
