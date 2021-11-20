@@ -27,7 +27,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    column-gap: 28px;
 }
 
 .section-vending_machine{
@@ -36,7 +36,6 @@ header{
     
     box-sizing: border-box;
     padding: 31px 27px 28px 27px;
-    margin-right: 28px;
     background-color: #fff;
 }
 
@@ -355,4 +354,25 @@ input::placeholder{
     font-size: 13px;
     line-height: 19px;
     color: #BDBDBD;
+}
+
+@media screen and (max-width:750px) {
+    #main-section{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:360px) {
+    
+    .img-logo{
+        width: 166px;
+    }
+
+    body{
+        background-color: #fff;
+    }
+
+    .txt-hand_money::before{
+        background: #fff;
+    }
 }
