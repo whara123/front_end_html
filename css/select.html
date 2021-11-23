@@ -6,75 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>select box 스타일링</title>
     <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="select_style.css">
     <style>
-      select {
-        background-color: pink;
-        border-radius: 20px;
-        font-size: 50px;
-        color: #fff;
-        text-align: center;
-        appearance: none;
-        /* select박스에서 appearance로 화살표 없애고 */
-        /* background-image: url(); */
-        /* 배경이미지 자체에 화살표 넣으면 깔끔 */
-        -webkit-appearance: none;
-        /* 사파리에서 화살표 안없어지는 문제 해결 */
-        border: none;
-        /* 파이어폭스에서는 이상한 테두리 남아서 없애줘야함 */
-        /* 브라우저마다 다 다르다 부들... */
-      }
-
-      option {
-        background: #fff;
-        color: palevioletred;
-        /* 옵션창 꾸밀 순 있지만 여기서 해도 의미가 없는게 */
-        /* 모바일 환경마다 다 다르다... 굳이?  */
-      }
-
-      /* 직접 셀렉트 박스 만들기 */
-      h2 {
-        margin: 30px;
-      }
-
-      .btn-select {
-        width: 200px;
-        height: 30px;
-        background: purple;
-        color: #fff;
-      }
-
-      .list-member {
-        display: none;
-        margin-top: 9px;
-        width: 200px;
-        height: 30px;
-      }
-
-      .list-member.on {
-        display: block;
-      }
-
-      .btn-select:active + .list-member {
-        display: block;
-      }
-
-      .list-member li {
-        height: 30px;
-        width: 200px;
-      }
-
-      .list-member li button {
-        display: block;
-        height: 100%;
-        width: 100%;
-        background-color: #fff;
-        border: 1px solid black;
-        border-top: none;
-      }
-
-      .list-member li button:hover {
-        background-color: bisque;
-      }
+      
     </style>
   </head>
 
@@ -91,12 +25,13 @@
 
     <section>
       <h2>셀렉트 박스 만들기</h2>
-      <button class="btn-select">당신의 에스파 최애 맴버는??</button>
+      <button class="btn-select">최애 프로그래밍 언어</button>
       <ul class="list-member">
-        <li><button type="button">카리나</button></li>
-        <li><button type="button">지젤</button></li>
-        <li><button type="button">닝닝</button></li>
-        <li><button type="button">윈터</button></li>
+        <li><button type="button">Python</button></li>
+        <li><button type="button">Java</button></li>
+        <li><button type="button">JavaScript</button></li>
+        <li><button type="button">C#</button></li>
+        <li><button type="button">C/C++</button></li>
       </ul>
     </section>
 
