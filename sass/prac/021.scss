@@ -18,7 +18,7 @@ $dark-text: #d2e1dd;
 
 .banner {
     @include theme-colors($light-theme: true);
-        body.dark & {
-            @include theme-colors($light-theme: false);
-        }
+    body.dark & {
+        @include theme-colors($light-theme: false);
+    }
 }

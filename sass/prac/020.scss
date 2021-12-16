@@ -10,9 +10,12 @@
     }
 }
 
-    .square-av {
+.square-av {
     @include avatar(100px, $circle: false);
-    }
-    .circle-av {
+}
+.circle-av {
     @include avatar(100px, $circle: true);
-    }
+}
+.test-av {
+    @include avatar(100px);
+}

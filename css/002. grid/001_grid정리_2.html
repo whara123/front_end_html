@@ -26,14 +26,14 @@
         .container {
             /* 높이에 맞게 stretch */
             display: grid;
-            grid-template-columns: 200px 200px 200px;
+            /* grid-template-columns: 200px 500px 200px; */
             /* grid-template-columns: 1fr 2.5fr 1fr; */
-            /* grid-template-columns: repeat(3, 1fr); */
-            grid-template-rows: 200px 500px 200px;
+            grid-template-columns: repeat(3, 1fr);
+            /* grid-template-rows: 200px 500px 200px; */
             /* grid-template-rows: 2fr 2.5fr 1fr; */
             /* grid-template-rows: repeat(3, minmax(200px, auto)); */
             /* auto rows의 경우 더 다양한 값들이 올 수 있습니다. 그러나 IE 11 미지원 */
-            /* grid-auto-rows: 200px; */
+            grid-auto-rows: 200px;
             /* grid-gap 그러나 IE 11 미지원 */
             /* gap: 20px; */
             /* row-gap: 20px; */

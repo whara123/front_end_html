@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* 여러줄 주석은 볼 수 있습니다. */
 ul li {
   color: red;
   font-size: 20px;

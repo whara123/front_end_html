@@ -6,17 +6,17 @@
     align-items: center;
     font-size: 14px;
     border-radius: 10px;
-  }
-  
-  .follow-button {
+}
+
+.follow-button {
     @extend %base-button;
     background-color: #ffffff;
     color: #ff375f;
     border: 3px solid #ff375f;
-  }
-  
-  .message-button {
+}
+
+.message-button {
     @extend %base-button;
     background-color: #ff375f;
     color: white;
-  }
+}

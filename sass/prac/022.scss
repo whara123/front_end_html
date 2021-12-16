@@ -13,17 +13,21 @@
 
     @if $direction == up {
         border-bottom-color: $color;
+        border-color: red;
     } @else if $direction == right {
         border-left-color: $color;
+        border-color: green;
     } @else if $direction == down {
         border-top-color: $color;
+        border-color: blue;
     } @else if $direction == left {
         border-right-color: $color;
+        border-color: hotpink
     } @else {
         @error "Unknown direction #{$direction}.";
     }
 }
 
-    .next {
-        @include triangle(5px, black, right);   
-    }
+.next {
+    @include triangle(5px, black, left);
+}

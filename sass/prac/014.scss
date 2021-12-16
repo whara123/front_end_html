@@ -1,15 +1,15 @@
-@mixin flex-center{
+@mixin flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.card{
-    @include flex-center();
+.card {
+    @include flex-center;
     background: gray;
 }
 
-.aside{
-    @include flex-center();
+.aside {
+    @include flex-center;
     background: white;
 }
